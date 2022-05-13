@@ -26,6 +26,7 @@ html {
   overflow-x: hidden;
   scroll-padding-top: 9rem;
   scroll-behavior: smooth;
+  user-select: none;
 }
 
 html::-webkit-scrollbar {
@@ -349,6 +350,59 @@ body {
   font-size: 2rem;
   color: var(--main-color);
 }
+
+/* CONTACT */
+
+.contact .row {
+  display: flex;
+  /* background-color: var(--black); */
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.contact .row .map {
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.contact .row form {
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.contact .row form h3 {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  color: white;
+}
+
+.contact .row form .inputBox {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  /* background-color: black */
+  border: var(--border);
+}
+
+.contact .row form .inputBox span {
+  color: var(--main-color);
+  font-size: 2rem;
+  padding-left: 2rem;
+}
+
+.contact .row form .inputBox input {
+  width: 100%;
+  padding: 3rem;
+  font-size: 1.7rem;
+  color: white;
+  text-transform: none;
+  background: none;
+}
+
+/* FOOTER */
 
 /* MEDIA Q */
 
