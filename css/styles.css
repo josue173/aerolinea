@@ -237,6 +237,11 @@ body {
 
 .providers .box-container .box:hover {
   background-color: white;
+  color: black;
+}
+
+.providers .box-container .box h3:hover {
+  color: var(--main-color);
 }
 
 /* PRODUCTOS */
