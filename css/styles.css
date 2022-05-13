@@ -197,67 +197,67 @@ body {
   line-height: 1.8;
 }
 
-/* PRODUCTOS */
+/* PROVEEDORES */
 
-.products .box-container {
+.providers .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   gap: 1.5rem;
 }
 
-.products .box-container .box {
+.providers .box-container .box {
   padding: 5rem;
   text-align: center;
   border: var(--border);
 }
 
-.products .box-container .box img {
+.providers .box-container .box img {
   height: 15rem;
   width: 20rem;
   object-fit: cover;
 }
 
-.products .box-container .box h3 {
+.providers .box-container .box h3 {
   color: white;
   font-size: 2rem;
   padding: 1rem 0;
 }
 
-.products .box-container .box .price {
+.providers .box-container .box .price {
   color: white;
   font-size: 2.5rem;
   padding: 5rem 0;
 }
 
-.products .box-container .box .price span {
+.providers .box-container .box .price span {
   color: white;
   font-size: 1.5rem;
   text-decoration: line-through;
 }
 
-.products .box-container .box:hover {
+.providers .box-container .box:hover {
   background-color: white;
 }
 
-/* PROVEEDORES */
+/* PRODUCTOS */
 
-.providers .box-container {
+.products .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
   gap: 1.5rem;
 }
 
-.providers .box-container .box {
+.products .box-container .box {
   text-align: center;
   border: var(--border);
   padding: 2rem;
 }
 
-.providers .box-container .box:hover > * {
+.products .box-container .box:hover > * {
   color: var(--black);
 }
 
-.providers .box-container .box .icons a {
+.products .box-container .box .icons a {
   height: 5rem;
   width: 5rem;
   line-height: 5rem;
@@ -267,40 +267,40 @@ body {
   margin: 0.3rem;
 }
 
-.providers .box-container .box .icons a:hover {
+.products .box-container .box .icons a:hover {
   background-color: var(--main-color);
 }
 
-.providers .box-container .box .image {
+.products .box-container .box .image {
   padding: 2.5rem 0;
 }
 
-.providers .box-container .box .image img {
+.products .box-container .box .image img {
   height: 25rem;
   width: 30rem;
   object-fit: cover;
 }
 
-.providers .box-container .box .content h3 {
+.products .box-container .box .content h3 {
   color: white;
   font-size: 2.5rem;
 }
 
-.providers .box-container .box .content .stars {
+.products .box-container .box .content .stars {
   padding: 1.5rem;
 }
 
-.providers .box-container .box .content .stars i {
+.products .box-container .box .content .stars i {
   font-size: 1.7rem;
   color: var(--main-color);
 }
 
-.providers .box-container .box .content .price {
+.products .box-container .box .content .price {
   color: white;
   font-size: 2.5rem;
 }
 
-.providers .box-container .box .content .price span {
+.products .box-container .box .content .price span {
   text-decoration: line-through;
   font-size: 1.5rem;
   font-weight: lighter;
