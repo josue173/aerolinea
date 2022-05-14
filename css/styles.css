@@ -34,16 +34,18 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-track {
-  background: transparent;
+  background: #d07e20;
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #fff;
+  background: #f69207;
   border-radius: 5rem;
 }
 
 body {
-  background-color: var(--bg);
+  /* background-color: var(--bg); */
+  background-color: #d39726;
+  /* background-color: #ffba00; */
 }
 
 .section {
@@ -60,13 +62,15 @@ body {
 
 .heading span {
   color: var(--main-color);
+  /* color: #cc6419; */
   text-transform: uppercase;
 }
 
 /* HEADER */
 
 .header {
-  background-color: var(--bg);
+  /* background-color: var(--bg); */
+  background-color: #cc6419;
   /* background-color: #c26728; */
   display: flex;
   align-items: center;
@@ -151,6 +155,7 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  background-color: #d07e20;
 }
 
 .about-us .row .image {
@@ -166,12 +171,14 @@ body {
 
 .about-us .row .content h3 {
   font-size: 3rem;
+  color: var(--main-color);
 }
 
 .about-us .row .content p {
   font-size: 1.6rem;
   padding: 1rem 0;
   line-height: 1.8;
+  color: white;
 }
 
 /* VISIÓN Y MISIÓN*/
@@ -210,6 +217,9 @@ body {
   padding: 5rem;
   text-align: center;
   border: var(--border);
+  border: 10%;
+  border-radius: 10%;
+  background-color: #d07e20;
 }
 
 .providers .box-container .box img {
@@ -256,6 +266,10 @@ body {
 .products .box-container .box {
   text-align: center;
   border: var(--border);
+  border-radius: 10%;
+  background-color: #d07e20;
+  /* box-shadow: 0 0 .5px .5px black; */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 2rem;
 }
 
@@ -322,6 +336,8 @@ body {
 
 .clients .box-container .box {
   border: var(--border);
+  border-radius: 10%;
+  background-color: #d9771d;
   text-align: center;
   padding: 3rem 2rem;
 }
@@ -402,10 +418,18 @@ body {
   background: none;
 }
 
+.btn {
+  background-color: #d9771d;
+  height: 5rem;
+  width: 10rem;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
 /* FOOTER */
 
 .footer {
-  /* background-color: ; */
+  background-color: #cc6419;
   text-align: center;
 }
 
@@ -413,18 +437,24 @@ body {
   padding: 1rem 0;
 }
 
-.footer .share a{
+.footer .share .share__links {
   height: 5rem;
   width: 5rem;
   line-height: 5rem;
   font-size: 2rem;
   color: white;
   border: var(--border);
-  margin: .3rem;
+  margin: 0.3rem;
   border-radius: 50%;
 }
 
-.footer .share a:hover {
+.footer .share .logo__umg img {
+  height: 5.5rem;
+  position: relative;
+  top: 19px;
+}
+
+.footer .share .share__links:hover {
   background-color: var(--main-color);
 }
 
@@ -437,7 +467,7 @@ body {
 }
 
 .footer .links a {
-  padding: .7rem 2rem;
+  padding: 0.7rem 2rem;
   color: white;
   border: var(--border);
   font-size: 2rem;
@@ -455,7 +485,15 @@ body {
 }
 
 .footer .credit span {
-  color: var(--main-color);
+  /* color: var(--main-color); */
+  /* color: #fca400; */
+  /* font-weight: bold; */
+}
+
+.footer .credit p {
+  /* color: var(--main-color); */
+  /* color: #fca400; */
+  font-style: italic;
 }
 
 /* MEDIA Q */
