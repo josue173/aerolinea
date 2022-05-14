@@ -484,11 +484,11 @@ body {
   padding: 1.5rem;
 }
 
-.footer .credit span {
-  /* color: var(--main-color); */
-  /* color: #fca400; */
-  /* font-weight: bold; */
-}
+/* .footer .credit span {
+  color: var(--main-color);
+  color: #fca400;
+  font-weight: bold;
+} */
 
 .footer .credit p {
   /* color: var(--main-color); */
