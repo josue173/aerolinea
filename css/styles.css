@@ -160,9 +160,12 @@ body {
 
 .about-us .row .image {
   flex: 1 1 45rem;
+  display: flex;
+  justify-content: center;
 }
+
 .about-us .row .image img {
-  width: 100%;
+  width: 50%;
 }
 .about-us .row .content {
   flex: 1 1 45rem;
