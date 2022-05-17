@@ -13,11 +13,21 @@
     <link rel="stylesheet" href="css/styles.css" />
     <!-- ICON -->
     <link rel="shortcut icon" href="img/flight.png" type="image/x-icon" />
+    <!-- SWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- <script
+      async
+      src="https://unpkg.com/swiper@8/swiper-bundle.min.js"
+    ></script> -->
     <!-- JS -->
     <script async src="js/script.js"></script>
     <title>Aerolínea Maya</title>
   </head>
   <body>
+    <!-- HEADER -->
     <header class="header">
       <a href="#" class="logo">
         <img src="img/flight.png" alt="Aerolínea Maya" class="logo__img" />
@@ -37,20 +47,35 @@
         <div class="fas fa-bars" id="menu-btn"></div>
       </div>
     </header>
-    <!-- <main>
-      <article> -->
+    <!-- CARROUSEL -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper__image swiper__img">
+          <h1>
+            Antony Josué Toribio Pérez
+            0901-22-11654
+          </h1>          
+          <br />
+          <!-- <p class="text"></p> -->
+        </div>
+        <div class="swiper-slide swiper__image swiper__img2">
+          <h1>Viaja con nostros</h1>
+        </div>
+        <!-- <div class="swiper-slide swiper__image swiper__img3">
+          <h1>El mejor servicio</h1>
+        </div> -->
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
     <!-- HOME -->
-    <section class="section home" id="home">
+    <!-- <section class="section home" id="home">
       <div class="content">
         <h3>Antony Josué Toribio Pérez</h3>
         <p class="text">0901-22-11654</p>
-        <!-- <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque nihil,
-          soluta neque est sequi ipsum delectus ab nesciunt.
-        </p> -->
-        <!-- <a href="#" class="btn">Tenlo ahora</a> -->
       </div>
-    </section>
+    </section> -->
     <!-- ABOUT US -->
     <section class="section about-us" id="about-us">
       <h1 class="heading"><span>Sobre </span>nosotros</h1>
@@ -78,7 +103,6 @@
     </section>
     <!-- MISION - VISION -->
     <section class="section vision-mision" id="vision-mision">
-      <!-- <h1 class="heading">Visión <span> y misión</span></h1> -->
       <div class="row">
         <div class="content">
           <h3>Visión</h3>
@@ -322,8 +346,7 @@
         </form>
       </div>
     </section>
-    <!-- </article>
-    </main> -->
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="share">
         <a
@@ -375,5 +398,30 @@
         <p>Conoceréis la verdad y la verdad os hará libres.</p>
       </div>
     </footer>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      // var swiper = new Swiper(".mySwiper", {
+      //   navigation: {
+      //     nextEl: ".swiper-button-next",
+      //     prevEl: ".swiper-button-prev",
+      //   },
+      // });
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
